@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<P>Tổng Bill <input id="a1"type="text"></p><br>
+<p>Số Người  <input id="a2" type="text"></p>
+<p>Số Tiền trên người: <button onclick="layThongTin() "> Lấy dữ liệu</button></p>
+<div id ="display"></div>
+<script>
+    function layThongTin() {
+        let bill = document.getElementById("a1").value;
+        bill= parseInt(bill);
+        let Người = document.getElementById("a2").value;
+        Người= parseInt(Người);
+        let bill_of_1 =bill/Người;
+
+        document.write("Số Tiền trên người:" +   bill_of_1);
+
+    }
+</script>
+</body>
+</html>

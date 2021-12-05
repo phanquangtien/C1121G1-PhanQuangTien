@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trung Binh Cong 3 Mon</title>
+</head>
+<body>
+<p>Điểm Toán <input id="T" type="text"></p>
+<p>Điểm Lý <input id="L" type="text"></p>
+<p>Điểm Hóa <input id="H" type="text"></p>
+<button type="button" onclick="tb3mon() ">Tính</button>
+</body>
+<script>
+    function tb3mon(){
+        let T = document.getElementById("T").value;
+        T = parseInt(T);
+        let L = document.getElementById("L").value;
+        L = parseInt(L);
+        let H = document.getElementById("H").value;
+        H = parseInt(H);
+        let result = (T+L+H)/3;
+        document.write(result);
+    }
+</script>
+</html>
