@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Amount
+    <input id="money" type="text" name="amount"><br>
+    From Currency
+    <select id="from">
+        <option value="usd">USD</option>
+        <option value="vnd">VietNam</option>
+    </select>
+    <select id="to">
+        <option value="usd">USD</option>
+        <option value="vnd">VietNam</option>
+    </select>
+    <input type="button" value="convert" onclick="doitien()">
+    <p id="a1"></p>
+</form>
+
+</body>
+<script>
+    function doitien() {
+        let amount = document.getElementById("money").value
+        let tienviet = document.getElementById("from").value
+        let tienusd = document.getElementById("to").value
+        let from = amount * 23000
+        let to = amount / 23000
+        if (tienviet === "vnd" && tienusd === "usd") {
+            document.getElementById("a1").innerHTML = "ket qua: " + to
+        }else if (tienviet === "usd" && tienusd === "vnd") {
+            document.getElementById("a1").innerHTML = "ket qua: " + from
+        }else {
+            document.getElementById(a1).innerHTML
+        }
+
+    }
+</script>
+</html>

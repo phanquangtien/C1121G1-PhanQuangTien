@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bán Kính<input id="r1" type="text"></p>
+<button type="button" onclick="a1()"> DienTichHinhTron</button>
+</body>
+
+<script>
+    function a1() {
+        let R = document.getElementById("r1").value;
+        R = parseInt(R);
+
+        let S = (R * R) *3.14
+        document.write('Ket Qua= ' + S);
+    }
+</script>
+</html>

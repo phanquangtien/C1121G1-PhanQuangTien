@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Điểm Sinh Viên</h1>
+<p>Điểm Lý <input id="L" type="text"></p>
+<p>Điểm Hóa <input id="H" type="text"></p>
+<p>Điểm Sinh <input id="S" type="text"></p>
+<button type="button" onclick="tinhdiem() ">Tính</button>
+</body>
+<script>
+    function tinhdiem(){
+        let L = document.getElementById("L").value;
+        L = parseInt(L);
+        let H = document.getElementById("H").value;
+        H = parseInt(H);
+        let S = document.getElementById("S").value;
+        S = parseInt(S);
+        let result= (L+H+S)/3;
+        let sun= (L+H+S);
+        document.write("diem trung binh=" + result );
+        document.write("<br>");
+        document.write("diem tong=" + sun );
+
+    }
+</script>
+</html>
