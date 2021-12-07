@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let taikhoan = prompt("tendangnhap");
+    if (taikhoan == "Admin") {
+        alert("Welcome")
+        let pass = prompt("matkhau");
+        if (pass == "TheMaster") {
+            alert("Welcome")
+        } else if (pass == "null") {
+            alert("Canceled")
+        } else {
+            alert("Wrong password")
+        }
+    } else if (taikhoan == "null") {
+            alert("canceld")
+        } else {
+            alert("I don’t know you")
+        }
+</script>
+</body>
+</html>
