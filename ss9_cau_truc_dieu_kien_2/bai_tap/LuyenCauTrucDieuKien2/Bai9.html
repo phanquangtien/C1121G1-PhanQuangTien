@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("cạnh a")
+    let b = prompt("cạnh b")
+    let c = prompt("cạnh c")
+    if (a && b && c > 0){
+        if (a + b > c){
+            if (b + c > a){
+                if (a + c > b){
+                    alert("là cạnh của hình tam giác")
+                }else {
+                    alert("không phải là cạnh của hình tam giác")
+                }
+            }else {
+                alert("không phải là cạnh của hình tam giác")
+            }
+        }else {
+            alert("không phải là cạnh của hình tam giác")
+        }
+    }else {
+        alert("không phải là cạnh của hình tam giác")
+    }
+</script>
+
+</body>
+</html>

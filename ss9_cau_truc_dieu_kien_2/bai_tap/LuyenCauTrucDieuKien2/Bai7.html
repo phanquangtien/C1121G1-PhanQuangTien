@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ let a = prompt("giá trị a")
+ let b = prompt("giá trị b")
+ let c = prompt("giá trị c")
+    if (a == 0){
+        if (b == 0){
+            if (c == 0){
+                alert("vô số nghiệm")
+            }else {
+                alert("vô nghiệm")
+            }
+        }else {
+            alert('có 1 nghiệm' + (-c/b))
+        }
+    }else {
+        let delta = b*b -4*a*c;
+        if (delta > 0){
+            let x1 = (-b+Math.sqrt(delta))/(2*a);
+            let x2 = (-b-Math.sqrt(delta))/(2*a);
+            alert('Nghiem thu nhat x1 = '+x1 +'\n Nghiem thu hai x2 = '+x2)
+        }else if (delta === 0) {
+            let deltaKep = -b/2*a;
+            alert('nghiệm kép' + deltaKep )
+        }else {
+            alert("phương trình vô nghiệm")
+        }
+    }
+</script>
+</body>
+</html>
