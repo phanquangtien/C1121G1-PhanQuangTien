@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let weight = prompt("chi so can nang")
+    let height = prompt("chi so chieu cao")
+    let bmi = weight / ( height ^ 2 )
+    if (bmi < 18)
+        document.write("nhe can");
+    else if (bmi < 25.0)
+        document.write("binh thuong");
+    else if (bmi < 30.0)
+        document.write("map map");
+    else
+        document.write("beo phi");
+</script>
+
+</body>
+</html>
