@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const number = parseInt(prompt('Nhập số '));
+    let n1 = 0, n2 = 1, nextTerm;
+    let sum = n1 + n2
+    for (let i = 2; i < number; i++) {
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+        sum += nextTerm;
+    }
+    alert(sum)
+</script>
+</body>
+</html>
