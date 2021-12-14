@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 5, 4, 6, 2, 3, 45, 23, 32, 66];
+      alert(arr);
+    let arr2 = [10, 9, 8, 7, 6, 23, 23, 55, 43];
+    alert(arr2);
+    let arr3 = arr.concat(arr2);
+    let str = arr3.join("-");
+    document.write( str );
+    arr.sort(function (x, y) {
+        return y - x;
+    });
+</script>
+</body>
+</html>

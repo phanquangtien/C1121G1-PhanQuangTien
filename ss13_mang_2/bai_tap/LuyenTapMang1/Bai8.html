@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = []
+    for (let i = 0;i < 10;i++){
+        num[i] = parseInt(prompt("nhập số" + i));
+    }
+    alert(num);
+     let temp = num[0]
+    for (let a= 0 ; a < num.length - 1; a++) {
+        for (let j = a + 1; j < num.length; j++) {
+            if (num[a] < num[j]) {
+                temp = num[j];
+                num[j] = num[a];
+                num[a] = temp;
+            }
+        }
+    }alert("sắp xếp" + num)
+
+</script>
+</body>
+</html>
