@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temparature {
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
+
+        oF() {
+            return this.celsius * 9 / 5 + 32;
+        }
+
+        oK() {
+            return this.celsius + 273.15;
+        }
+    }
+
+    let temparature = new Temparature(66);
+    let f = temparature.oF();
+    let k = temparature.oK();
+    alert('Với oC=66 thì oF=' + f + ' và oK=' + k);
+</script>
+</body>
+</html>

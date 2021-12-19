@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        dienTich() {
+            return this.height * this.width;
+        }
+
+        chuVi() {
+            return (this.width + this.height) * 2;
+        }
+    }
+
+    let rectangle = new Rectangle(30, 20);
+    let dienTich = rectangle.dienTich();
+    let chuVi = rectangle.chuVi();
+    document.write('dien tich = ' + dienTich + '<br> chu vi = ' + chuVi);
+
+
+</script>
+</body>
+</html>
