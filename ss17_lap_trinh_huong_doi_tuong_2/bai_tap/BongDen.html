@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Dendien {
+        constructor(status) {
+            this.status = status;
+        }
+
+        turnOn() {
+            this.status = true;
+            alert("bật");
+        }
+
+        turnOff() {
+            this.status = false;
+            alert("tắt");
+        }
+    }
+
+    class Congtac {
+        constructor(status) {
+            this.status = status;
+        }
+
+        connectToLamp(Dendien) {
+            if (this.status) {
+                Dendien.turnOn()
+            } else {
+                Dendien.turnOff()
+            }
+        }
+
+        switchOn() {
+            return this.status = true;
+        }
+
+        switchOff() {
+            return this.status = false;
+        }
+    }
+
+    let dendien = new Dendien(false);
+    let congtac = new Congtac(false);
+    for (let i = 0; i < 10; i++) {
+        congtac.switchOn();
+        congtac.connectToLamp(dendien);
+        congtac.switchOff();
+        congtac.connectToLamp(dendien);
+        alert("lần thứ " + (i + 1));
+    }
+</script>
+</body>
+</html>

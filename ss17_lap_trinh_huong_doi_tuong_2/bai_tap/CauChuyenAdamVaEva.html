@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Apple = function () {
+        this.setPiece=function (piece) {
+            this.piece = piece;
+        };
+        this.getPiece = function () {
+            return this.piece;
+        };
+        this.decreasePiece = function () {
+            if (this.piece > 0)
+                return this.piece --;
+            else return this.piece=0;
+        };
+    };
+
+    let Human = function (name,say,weight) {
+        this.name=name;
+        this.say=say;
+        this.weight=weight;
+
+        this.getWeight=function () {
+            return this.weight;
+        };
+        this.setApple = function (apple) {
+            this.apple=apple;
+        };
+        this.getAppleInf = function () {
+            return this.apple.getPiece();
+        };
+        this.biteShot = function () {
+            if (this.status){
+                this.weight ++;
+                document.write(this.name+ this.say + '<br>');
+            }
+        };
+        this.oneShot=function () {
+            this.status = true;
+            return this.apple.decreasePiece();
+        };
+    };
+
+    let human = new Human('Adam','Male',50);
+   let apple = new Apple();
+    apple.setPiece(10);
+    human.setApple(apple);
+
+    for (let i=0;i<10;i++){
+        human.oneShot();
+        human.biteShot();
+        document.write(human.getWeight()+'.'+' The remain of the apple: '+human.getAppleInf()+'<br>');
+    }
+</script>
+</body>
+</html>
