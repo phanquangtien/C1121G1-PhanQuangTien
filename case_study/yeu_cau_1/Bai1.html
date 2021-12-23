@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 4
+    let b = 5
+    for (let x =1;x <= a;x++){
+        document.write("*")
+        for (let y =1;y<=b;y++) {
+            if (x === 1 || x === a || y === 0 || y === b) {
+                document.write("*")
+            }else {
+                document.write("&nbsp;&nbsp;")
+            }
+        }
+        document.write("<br/>")
+    }
+</script>
+</body>
+</html>
